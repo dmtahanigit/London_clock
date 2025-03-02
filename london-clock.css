@@ -39,22 +39,22 @@ body, html {
 }
 
 #clock {
-    font-size: 4.5vw;  /* Reduced from 15vw to 30% of original size */
+    font-size: 2vw;  /* Dramatically reduced size */
     color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
     font-weight: bold;
-    padding: 0.75rem;  /* Slightly reduced padding */
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;  /* Slightly reduced border radius */
-    backdrop-filter: blur(5px);
-    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(3px);
+    margin-bottom: 0.5rem;
     text-align: center;
-    max-width: 90%;
+    max-width: 50%;  /* Reduced max-width */
 }
 
 #mute-toggle {
-    font-size: 0.9rem;  /* Slightly reduced button size */
-    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
     border: none;
@@ -70,12 +70,13 @@ body, html {
 
 @media (max-width: 768px) {
     #clock {
-        font-size: 3.6vw;  /* Reduced from 12vw to 30% of original size */
-        padding: 0.4rem;
+        font-size: 3vw;  /* Slightly larger on mobile for readability */
+        padding: 0.3rem;
+        max-width: 40%;  /* Even smaller on mobile */
     }
 
     #mute-toggle {
-        font-size: 0.7rem;
-        padding: 0.3rem 0.7rem;
+        font-size: 0.6rem;
+        padding: 0.2rem 0.5rem;
     }
 }
